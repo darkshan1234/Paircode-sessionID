@@ -87,7 +87,7 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
             await delay(1000 * 10)
             await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer\n\n\n⎆Donate: https://i.ibb.co/W2gYn6S/binance.png\n\n⎆YouTube: https://youtube.com/@DGXeon\n\n⎆Telegram Channel: https://t.me/xeonbotinc\n\n⎆Telegram Chat: https://t.me/+AYOyJflnt-AzNGFl\n\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n\n⎆WhatsApp Gc2: https://chat.whatsapp.com/EEOnU0V7dl9HF1mMFO8QWa\n\n⎆WhatsApp Gc3: https://chat.whatsapp.com/Dh0lD0Ee5hN1JMFXNqtxSG\n\n⎆WhatsApp Pm: Wa.me/916909137213\n\n⎆Instagram: https://instagram.com/unicorn_xeon13\n\n⎆GitHub: https://github.com/DGXeon/\n\n⎆Blog: https://dreamguyxeonfiles.blogspot.com/2022/05/bots%20whatsapp%20mods.html?m=1\n\n\n` });
             await delay(1000 * 2) 
-             let shan = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+             let shan = fs.readFileSync(__dirname + `/session/${id}/creds.json`);
                let b64data = Buffer.from(shan).toString('base64');
 					const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, {
 						text: `DARKSHAN;;;` + b64data
